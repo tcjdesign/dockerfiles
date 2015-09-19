@@ -6,12 +6,12 @@ Search IMDb.com for movie information and store this detailed information (like 
 
 More information per movie like personal notes, if you own or have seen the movie, loaned it out, etc...
 
-    Add covers to your movies
-    Powerful and quick search function
-    User login
-    Multiple languages
-    Very configurable, easy to use
-    Layout is based on a template which you can easily adjust
+Add covers to your movies
+Powerful and quick search function
+User login
+Multiple languages
+Very configurable, easy to use
+Layout is based on a template which you can easily adjust
 
 Including fix of broken IMDB lookup - PHP imdb Classes
 Module made by izzy and sevec at https://sourceforge.net/projects/imdbphp
