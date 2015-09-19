@@ -1,6 +1,6 @@
 # ftb-infinity
 Feed The Beast Infinity modpack
-Made by Feed The Beast at https://feed-the-beast.com
+made by Feed The Beast at https://feed-the-beast.com
 
 Modpack for Minecraft 1.7.10.
 Infinity is the general all-purpose pack from the FTB team that is designed for solo play as well as small and medium population servers. The pack for all people.
