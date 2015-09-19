@@ -1,4 +1,4 @@
-# php4dvd-docker
+# php4dvd
 php4dvd - movie database
 Made by cyberolf at https://sourceforge.net/projects/php4dvd
 
