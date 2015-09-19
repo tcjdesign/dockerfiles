@@ -1,6 +1,6 @@
 # php4dvd
 php4dvd - movie database
-Made by cyberolf at https://sourceforge.net/projects/php4dvd
+made by cyberolf at https://sourceforge.net/projects/php4dvd
 
 Search IMDb.com for movie information and store this detailed information (like directors, actors, poster, language...)
 
