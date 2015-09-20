@@ -15,4 +15,4 @@ Feel free to modify to your preferences.
 To change the server.properties file:
 - Stop the container.
 - Modify server.properties in your directory. Use sudo if permission errors.
-- If you changed the servernavne. Delete "world" folder to save some diskspace.
+- If you changed the servername. Delete "world" folder to save some diskspace.
