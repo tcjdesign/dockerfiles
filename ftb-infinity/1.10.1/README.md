@@ -9,10 +9,10 @@ Fastcraft is enabled in this pack by default.
 Running ftb-infinity:
 docker run -d -p 25565:25565 -v [path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity
 
-The first time server stars it creates the server.properties file with default settings and spawns "world". 
+The first time the server starts it creates the server.properties file with default settings and spawns "world". 
 Feel free to modify to your preferences. 
 
 To change the server.properties file:
 - Stop the container.
 - Modify server.properties in your directory. Use sudo if permission errors.
-- If you changed the servernavne. Delete "world" folder to save some diskspace.
+- If you changed the servername. Delete "world" folder to save some diskspace.
