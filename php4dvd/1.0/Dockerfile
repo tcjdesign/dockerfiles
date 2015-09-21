@@ -1,6 +1,7 @@
 FROM ubuntu:14.04
 
-MAINTAINER Jonas Bonno Mikkelsen <jonas@bonno.dk>
+
+MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
 
 # Installing dependencies
