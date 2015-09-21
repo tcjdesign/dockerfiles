@@ -1,7 +1,7 @@
 FROM java:8-jre
 
 
-MAINTAINER Jonas Bonno Mikkelsen <jonas@bonno.dk>
+MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
 
 RUN apt-get update && \
