@@ -2,7 +2,7 @@
 
 
 MINECRAFT_HOME="/opt/minecraft"
-FTB_INFINITY_URL="http://www.creeperrepo.net/FTB2/modpacks%5EFTBInfinity%5E1_10_1%5EFTBInfinityServer.zip"
+FTB_INFINITY_URL="http://ftb.cursecdn.com/FTB2/modpacks/FTBInfinity/1_10_1/FTBInfinityServer.zip"
 LAUNCHWRAPPER="net/minecraft/launchwrapper/1.11/launchwrapper-1.11.jar"
 MINECRAFT_OPTS="-server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC"
 MINECRAFT_STARTUP_JAR="$MINECRAFT_HOME/FTBServer-1.7.10-1448.jar"
