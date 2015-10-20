@@ -13,6 +13,8 @@ Multiple languages
 Very configurable, easy to use
 Layout is based on a template which you can easily adjust
 
+<img src="http://php4dvd.sourceforge.net/screenshots/collection.png" width="403" height="216">
+
 Including fix of broken IMDB lookup - PHP imdb Classes
 Module made by izzy and sevec at https://sourceforge.net/projects/imdbphp
 
