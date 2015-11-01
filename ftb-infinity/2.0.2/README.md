@@ -1,4 +1,4 @@
-# ftb-infinity - v1.11.2
+# ftb-infinity - v2.0.2
 Feed The Beast Infinity modpack
 made by Feed The Beast at https://feed-the-beast.com
 
