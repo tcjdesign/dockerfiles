@@ -3,9 +3,9 @@
 
 MINECRAFT_HOME="/opt/minecraft"
 FTB_INFINITY_URL="http://addons-origin.cursecdn.com/files/2270/338/FTBInfinityServer.zip"
-LAUNCHWRAPPER="net/minecraft/launchwrapper/1.11/launchwrapper-1.11.jar"
+LAUNCHWRAPPER="net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
 MINECRAFT_OPTS="-server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC"
-MINECRAFT_STARTUP_JAR="$MINECRAFT_HOME/FTBServer-1.7.10-1448.jar"
+MINECRAFT_STARTUP_JAR="$MINECRAFT_HOME/FTBServer-1.7.10-1558.jar"
 MCVER="1.7.10"
 JARFILE="minecraft_server.${MCVER}.jar"
 
