@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 	apache2 \
 	php5 \
 	php5-mysql \
-        php5-gd \
+	php5-gd \
 	unzip \
 	tar \
 	wget && \
