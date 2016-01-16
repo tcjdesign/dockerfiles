@@ -1,22 +1,17 @@
 # ftb-infinity
-Feed The Beast Infinity Evolved modpack
-made by Feed The Beast at https://feed-the-beast.com
+A multifunction Discord bot 
+made by Twentysix at https://github.com/Twentysix26
 
-Modpack for Minecraft 1.7.10.
-Infinity Evolved is the general all-purpose pack from the FTB team that is designed for solo play as well as small and medium population servers. The pack for all people.
-Fastcraft is enabled in this pack by default.
+#### *Fun bringer, admin helper and music bot*  
+[<img align="right" title="Art by Supergiant Games" src="https://www.supergiantgames.com/static/images/transistor/cartoon_red.png">](https://www.supergiantgames.com/games/transistor/)
 
-<img src="http://media-elerium.cursecdn.com/avatars/27/883/635818079923323584.png" width="338" height="338">
-
-NOTE: In compliance with Mojang "End User License Agreement", you will need to agree to the EULA in order to run your own Minecraft server. By using this container you acknowledge the EULA! If you do not agree, then you are not permitted to use this container!
-
-Running ftb-infinity:
-docker run -d -p 25565:25565 -v [path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity
-
-The first time the server starts it creates the server.properties file with default settings and spawns "world". 
-Feel free to modify to your preferences. 
-
-To change the server.properties file:
-- Stop the container.
-- Modify server.properties in your directory. Use sudo if permission errors.
-- If you changed the servername. Delete "world" folder to save some diskspace.
+### Cool title, but what does it do exactly?
+A bit of everything. Seriously though:  
+It has the [most common features](#general-commands) of many chatbots (!flip, !8, stopwatch, etc.), **custom commands** (inspired by Twitch's [Nightbot](https://www.nightbot.tv/)).  
+It features some games such as **Trivia**, rock paper scissors, [users can earn and play with credits](#economy-commands) in the slot machine.  
+[The audio part is quite fleshed out](#audio-commands). Users can **stream youtube videos**, create **playlists** that everyone will be able to play and control (previous/next song, pause/resume, shuffle...).  
+**MP3 and flac files can also be streamed** (see [FAQ](#faq) for details on local playlists)  
+**Twitch's online notifications**: Red will notify the channels you want whenever you favorite Twitch streamers are online.  
+As for the moderation tools, it includes a **powerful message filter with regular expression capabilities** and **mass messages cleanup**.  
+[I'm planning to expand all this much more](#todo-list).  
+See the [command list](#general-commands) for an even better idea of what this bot can do.
