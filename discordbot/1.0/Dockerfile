@@ -27,7 +27,8 @@ RUN apt-get update && apt-get install -y \
 RUN alias python=python3.5
 RUN git clone https://github.com/FFmpeg/FFmpeg.git /root/FFmpeg
 RUN cd /root/FFmpeg && ./configure --enable-nonfree --enable-gpl --enable-libx264 --enable-x11grab --enable-zlib --enable-openssl
-RUN make && make install && cd /
+RUN cd /root/FFmpeg && make
+RUN cd /root/FFmpeg && make install
 RUN pip3 install git+https://github.com/Rapptz/discord.py@async
 RUN pip3 install requests
 RUN pip3 install youtube_dl
