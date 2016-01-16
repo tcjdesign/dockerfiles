@@ -12,6 +12,7 @@ NOTE: In compliance with Mojang "End User License Agreement", you will need to a
 
 Running ftb-infinity:
 docker run -d -p 25565:25565 -v [path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity
+For console create container with "--tty=true" and "--interactive=true".
 
 The first time the server starts it creates the server.properties file with default settings and spawns "world". 
 Feel free to modify to your preferences. 
