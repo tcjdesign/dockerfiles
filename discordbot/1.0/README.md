@@ -1,6 +1,6 @@
 # discordbot - v1.0
 A multifunction Discord bot 
-made by Twentysix at https://github.com/Twentysix26
+made by Twentysix at https://github.com/Twentysix26/Red-DiscordBot
 
 #### *Fun bringer, admin helper and music bot*  
 [<img align="right" title="Art by Supergiant Games" src="https://www.supergiantgames.com/static/images/transistor/cartoon_red.png">](https://www.supergiantgames.com/games/transistor/)
