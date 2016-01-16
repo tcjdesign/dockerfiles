@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y \
 # Installing more dependencies
 RUN alias python=python3.5
 RUN git clone https://github.com/FFmpeg/FFmpeg.git /root/FFmpeg
-RUN ./root/FFmpeg/configure --enable-nonfree --enable-gpl --enable-libx264 --enable-x11grab --enable-zlib --enable-openssl
+RUN /root/FFmpeg/configure --enable-nonfree --enable-gpl --enable-libx264 --enable-x11grab --enable-zlib --enable-openssl
 RUN make
 RUN make install
 RUN pip3 install git+https://github.com/Rapptz/discord.py@async
