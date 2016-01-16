@@ -5,7 +5,7 @@ MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
 
 # Installing dependencies
-RUN add-apt-repository ppa:fkrull/deadsnakes -y
+RUN add-apt-repository -y ppa:fkrull/deadsnakes
 RUN apt-get update && apt-get install -y \
   libopus0 \
 	libssl-dev \
