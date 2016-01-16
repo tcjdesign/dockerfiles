@@ -5,7 +5,8 @@ MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
 
 # Installing dependencies
-RUN add-apt-repository -y ppa:fkrull/deadsnakes
+RUN echo 'deb http://ppa.launchpad.net/fkrull/deadsnakes/ubuntu trusty main' >> /etc/apt/sources.list.d/fkrull-deadsnakes-trusty.list && \
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5BB92C09DB82666C
 RUN apt-get update && apt-get install -y \
   libopus0 \
 	libssl-dev \
