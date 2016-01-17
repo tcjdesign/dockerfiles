@@ -24,4 +24,4 @@ Running nginx-proxy:
 docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
 
 Running php4dvd:
-docker run -d -p 80 -v [path to data location on host]:/var/www/html -e VIRTUAL_HOST=hostname.fdqn.tld -e APACHE_SERVERNAME=hostname -e APACHE_SERVERALIAS=hostname.home.lan jonasbonno/php4dvd
+docker run -d -p 80 -v [path to data location on host]:/var/www/html -e VIRTUAL_HOST=hostname.fdqn.tld -e APACHE_SERVERNAME=hostname -e APACHE_SERVERALIAS=hostname.home.lan jonasbonno/php4dvd:1.0
