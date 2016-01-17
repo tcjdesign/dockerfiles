@@ -10,6 +10,7 @@ RUN echo 'deb http://ppa.launchpad.net/fkrull/deadsnakes/ubuntu trusty main' >> 
 RUN apt-get update && apt-get install -y \
 	libopus0 \
 	libssl-dev \
+	python3.5 \
 	python3-pip \
 	git \
 	make \
@@ -20,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 	libxfixes-dev \
 	zlib1g-dev && \
 	apt-get clean && \
-	rm -rf /var/lib/apt/lists/*
+	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 
 # Installing more dependencies
@@ -33,6 +34,7 @@ RUN pip3 install git+https://github.com/Rapptz/discord.py@async
 RUN pip3 install requests
 RUN pip3 install youtube_dl
 RUN pip3 install beautifulsoup4
+RUN mkdir -p /usr/local/lib/python3.5/dist-packages
 RUN cp -R /usr/local/lib/python3.4/dist-packages/* /usr/local/lib/python3.5/dist-packages
 RUN git clone https://github.com/Twentysix26/Red-DiscordBot.git /root/Red-DiscordBot
 
