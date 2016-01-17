@@ -11,7 +11,7 @@ Fastcraft is enabled in this pack by default.
 NOTE: In compliance with Mojang "End User License Agreement", you will need to agree to the EULA in order to run your own Minecraft server. By using this container you acknowledge the EULA! If you do not agree, then you are not permitted to use this container!
 
 Running ftb-infinity:
-docker run -d -p 25565:25565 -v [path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity
+docker run -d -p 25565:25565 -v [path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity:2.3.5
 Tip: For console create container with "--tty=true" and "--interactive=true".
 
 I personaly use:
