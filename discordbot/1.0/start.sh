@@ -1,14 +1,13 @@
 #!/bin/bash
 
 
-# Changes Python to v3.5
-python=python3.5
-
-
 # Updates discordbot from Twentysix GitHub
-cd /root/Red-DiscordBot
-git pull
+rm /root/Red-DiscordBot/json
+cd /root/Red-DiscordBot && git pull
+
+# Creates symbolic link to config
+ln -s /json /root/Red-DiscordBot
 
 
 # Start python script
-python /root/Red-DiscordBot/red.py
+cd /root/Red-DiscordBot && python3.5 red.py
