@@ -15,7 +15,7 @@ docker run -d -p 25565:25565 -v [path to data location on host]:/opt/minecraft j
 Tip: For console create container with "--tty=true" and "--interactive=true".
 
 I personaly use:
-docker run --tty=true --interactive=true --detach=true --name=CONTAINERNAME --publish=25565:25565 --volume=[path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity
+docker run --tty=true --interactive=true --detach=true --name=CONTAINERNAME --publish=25565:25565 --volume=[path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity:2.3.5
 
 The first time the server starts it creates the server.properties file with default settings and spawns "world". 
 Feel free to modify to your preferences. 
