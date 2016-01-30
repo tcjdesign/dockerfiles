@@ -12,7 +12,11 @@ NOTE: In compliance with Mojang "End User License Agreement", you will need to a
 
 Running ftb-infinity:
 docker run -d -p 25565:25565 -v [path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity
-Tip: For console create container with "--tty=true" and "--interactive=true".
+
+To access the console:
+</br>docker attach [name of container]
+</br>Run for commands
+</br>To exit again press CTRL+P and then CTRL+Q
 
 I personaly use:
 docker run --tty=true --interactive=true --detach=true --name=CONTAINERNAME --publish=25565:25565 --volume=[path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity
