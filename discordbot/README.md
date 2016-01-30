@@ -7,6 +7,11 @@ made by Twentysix at https://github.com/Twentysix26/Red-DiscordBot
 
 To run container: docker run --tty=true --interactive=true --detach=true --volume=[path to data location on host]:/json jonasbonno/discordbot
 
+To set it up on first start: 
+docker attach [name of container]
+Enter discord email, password, admin group and etc.
+To exit again press CTRL+P and then CTRL+Q
+
 ### Cool title, but what does it do exactly?
 A bit of everything. Seriously though:  
 It has the [most common features](#general-commands) of many chatbots (!flip, !8, stopwatch, etc.), **custom commands** (inspired by Twitch's [Nightbot](https://www.nightbot.tv/)).  
