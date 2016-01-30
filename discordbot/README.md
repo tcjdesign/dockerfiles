@@ -8,9 +8,9 @@ made by Twentysix at https://github.com/Twentysix26/Red-DiscordBot
 To run container: docker run --tty=true --interactive=true --detach=true --volume=[path to data location on host]:/json jonasbonno/discordbot
 
 To set it up on first start: 
-docker attach [name of container]
-Enter discord email, password, admin group and etc.
-To exit again press CTRL+P and then CTRL+Q
+</br>docker attach [name of container]
+</br>Enter discord email, password, admin group and etc.
+</br>To exit again press CTRL+P and then CTRL+Q
 
 ### Cool title, but what does it do exactly?
 A bit of everything. Seriously though:  
