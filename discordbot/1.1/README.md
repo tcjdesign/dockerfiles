@@ -1,4 +1,4 @@
-# discordbot
+# discordbot v1.1
 Red - A fully customizable Discord bot
 Music, admin, trivia, fun commands and much more!
 made by Twentysix at https://github.com/Twentysix26/Red-DiscordBot/tree/develop
