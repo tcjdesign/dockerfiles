@@ -5,11 +5,12 @@ MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
 
 # Installing dependencies
-RUN echo 'deb http://ppa.launchpad.net/mc3man/trusty-media/ubuntu/ trusty main' >> /etc/apt/sources.list.d/mc3man-trusty-media-trusty.list && \
+RUN echo 'deb http://ppa.launchpad.net/mc3man/ffmpeg-test1/ubuntu/ wily main' >> /etc/apt/sources.list.d/mc3man-trusty-media-trusty.list && \
 	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 90BD7EACED8E640A
 RUN apt-get update && apt-get install -y \
 	software-properties-common \
 	python-software-properties \
+	ffmpeg \
 	libopus0 \
 	libssl-dev \
 	tar \
@@ -21,8 +22,8 @@ RUN apt-get update && apt-get install -y \
 	libxext-dev \
 	libxfixes-dev \
 	zlib1g-dev \
-	openssl \
-	ffmpeg && \
+	wget \
+	openssl && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
