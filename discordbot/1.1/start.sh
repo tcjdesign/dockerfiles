@@ -2,11 +2,12 @@
 
 
 # Updates discordbot from Twentysix GitHub
-rm /root/Red-DiscordBot/json
+rm /root/Red-DiscordBot/data/red
 cd /root/Red-DiscordBot && git pull
 
+
 # Creates symbolic link to config
-ln -s /json /root/Red-DiscordBot
+ln -s /red /root/Red-DiscordBot/data/red
 
 
 # Start python script
