@@ -5,7 +5,7 @@ made by Twentysix at https://github.com/Twentysix26/Red-DiscordBot/tree/develop
 
 #### *Music, admin, trivia, fun commands and much more!*  
 
-To run container: docker run --tty=true --interactive=true --detach=true --volume=[path to data location on host]:/red jonasbonno/discordbot
+To run container: docker run --tty=true --interactive=true --detach=true --volume=[path to data location on host]:/data jonasbonno/discordbot:1.1
 
 To set it up on first start: 
 </br>docker attach [name of container]
