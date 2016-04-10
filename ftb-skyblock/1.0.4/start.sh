@@ -24,12 +24,14 @@ EOL
 	cat >$MINECRAFT_HOME/server.properties <<EOL
 #Minecraft server properties
 generator-settings=
+op-permission-level=4
 allow-nether=true
 level-name=world
 enable-query=false
 allow-flight=false
+announce-player-achievements=true
 server-port=25565
-level-type=botania-skyblock
+level-type=DEFAULT
 enable-rcon=false
 level-seed=
 force-gamemode=false
@@ -39,15 +41,18 @@ spawn-npcs=true
 white-list=false
 spawn-animals=true
 snooper-enabled=true
-texture-pack=true
 online-mode=true
+resource-pack=
 pvp=true
 difficulty=1
+enable-command-block=false
 gamemode=0
+player-idle-timeout=0
 max-players=20
 spawn-monsters=true
 generate-structures=true
 view-distance=10
+spawn-protection=16
 motd=FTB Infinity Evolved Skyblock
 EOL
 chmod +x $MINECRAFT_HOME/FTBInstall.sh $MINECRAFT_HOME/ServerStart.sh
