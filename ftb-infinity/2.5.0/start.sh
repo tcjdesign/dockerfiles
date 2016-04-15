@@ -4,7 +4,7 @@
 MINECRAFT_HOME="/opt/minecraft"
 FTB_INFINITY_URL="http://addons-origin.cursecdn.com/files/2292/903/FTBInfinityEvolvedServer_2.5.0.zip"
 LAUNCHWRAPPER="net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
-MINECRAFT_OPTS="-server -Xms512M -Xmx2048M -XX:PermSize=256M -XX:+UseParNewGC -XX:+CMSIncrementalPacing -XX:+CMSClassUnloadingEnabled -XX:ParallelGCThreads=2 -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10"
+MINECRAFT_OPTS="-server -Xms512M -Xmx2048M -XX:+CMSIncrementalPacing -XX:+CMSClassUnloadingEnabled -XX:ParallelGCThreads=2 -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:+PrintGCDetails"
 MINECRAFT_STARTUP_JAR="$MINECRAFT_HOME/FTBServer-1.7.10-1614.jar"
 MCVER="1.7.10"
 JARFILE="minecraft_server.${MCVER}.jar"
