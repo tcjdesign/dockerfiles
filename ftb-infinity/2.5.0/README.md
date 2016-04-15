@@ -34,3 +34,5 @@ When upgrading:
 - Delete everthing in [path to data location on host].
 - Create new container and let it startup completely the first time.
 - Turn it off and copy your folder and files back.
+- If you get an /fml error, edit ServerStart.sh, add -Dfml.queryResult=Confirm between -jar and FTBServer-1.7.10-1614.jar 
+  This allows the server to boot and delete unsupported items for the world.
