@@ -19,7 +19,7 @@ To access the console:
 </br>To exit again press CTRL+P and then CTRL+Q
 
 I personaly use:
-docker run --tty=true --interactive=true --detach=true --name=CONTAINERNAME --publish=25565:25565 --volume=[path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity:2.3.5
+docker run --tty=true --interactive=true --detach=true --name=CONTAINERNAME --publish=25565:25565 --volume=[path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity:2.4.2
 
 The first time the server starts it creates the server.properties file with default settings and spawns "world". 
 Feel free to modify to your preferences. 
