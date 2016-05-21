@@ -25,7 +25,7 @@ RUN	pip install \
 		imgurpython \
 		youtube_dl \
 		git+https://github.com/Rapptz/discord.py@async 
-RUN git clone -b develop --single-branch https://github.com/Twentysix26/Red-DiscordBot.git /app
+RUN git clone -b develop --single-branch https://github.com/Twentysix26/Red-DiscordBot.git /root/Red-DiscordBot
 
 
 # Adding startscript and executes it
