@@ -17,7 +17,7 @@ RUN apk update && apk add \
 
 
 # Installing more dependencies
-RUN get https://bootstrap.pypa.io/get-pip.py
+RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN python3 get-pip.py
 RUN pip install \
 	beautifulsoup4 \
