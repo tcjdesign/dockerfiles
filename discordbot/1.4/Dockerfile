@@ -1,4 +1,4 @@
-FROM yikaus/alpine-bash
+FROM frolvlad/alpine-bash
 
 
 MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
