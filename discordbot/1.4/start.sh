@@ -26,4 +26,4 @@ fi
 
 
 # Start python script
-cd /root/Red-DiscordBot && python3 red.py
+cd /root/Red-DiscordBot && python3.5 red.py
