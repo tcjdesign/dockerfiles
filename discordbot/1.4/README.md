@@ -12,6 +12,9 @@ To set it up on first start:
 </br>Enter discord email, password, admin group and etc.
 </br>To exit again press CTRL+P and then CTRL+Q
 
+Firewall:
+Remember that the bot needs access to Discord voice servers therefor open up for e.g. london365.discord.gg and frankfurt306.discord.gg. If you use other server locations then check your firewall logs and open for thier blocked IPs.
+
 Red has been completely rewritten. It is now fully modular and it comes with sets of features/commands that can be enabled/disabled to your liking, making it customizable exactly how you want.
 You can turn Red into a trivia bot, an admin bot, a music bot (...) or all of these together.
 
