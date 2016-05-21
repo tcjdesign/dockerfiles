@@ -1,4 +1,4 @@
-FROM alpine
+FROM yikaus/alpine-bash
 
 
 MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
