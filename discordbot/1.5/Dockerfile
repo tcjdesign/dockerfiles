@@ -12,12 +12,17 @@ RUN apk update && apk add \
 	opus-dev \
 	openssl-dev \
 	libffi-dev \
-	build-base && \
+	build-base \
+	ca-certificates && \
 	rm -rf /var/lib/apt/lists/*
+	
+
+# Updating CA certificates on Alpine Linux
+RUN update-ca-certificates
 
 
 # Installing more dependencies
-RUN wget http://bootstrap.pypa.io/get-pip.py
+RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN python3.5 get-pip.py
 RUN pip install \
 	beautifulsoup4 \
