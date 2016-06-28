@@ -12,13 +12,15 @@ RUN apk update && apk add \
 	opus-dev \
 	openssl-dev \
 	libffi-dev \
-	build-base \
-	ca-certificates && \
+	build-base && \
 	rm -rf /var/lib/apt/lists/*
 	
 
 # Updating CA certificates on Alpine Linux
-RUN update-ca-certificates
+RUN apk --update upgrade && \
+	apk add curl ca-certificates && \
+	update-ca-certificates && \
+	rm -rf /var/cache/apk/*
 
 
 # Installing more dependencies
