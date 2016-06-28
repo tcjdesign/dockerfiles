@@ -11,7 +11,7 @@ pip3 install --upgrade git+https://github.com/Rapptz/discord.py@async
 
 
 # Updates pip modules
-pip3 install --upgrade beautifulsoup4 imgurpython youtube_dl
+pip3 install --upgrade beautifulsoup4 imgurpython youtube_dl PyNaCl
 
 
 # Creates symbolic link to config
