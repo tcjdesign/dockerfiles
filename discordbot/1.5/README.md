@@ -1,11 +1,11 @@
-# discordbot - v1.4
+# discordbot - v1.5
 Red - A fully customizable Discord bot
 Music, admin, trivia, fun commands and much more!
 made by Twentysix at https://github.com/Twentysix26/Red-DiscordBot/tree/develop
 
 #### *Music, admin, trivia, fun commands and much more!*  
 
-To run container: docker run --tty=true --interactive=true --detach=true --volume=[path to data location on host]:/data jonasbonno/discordbot:1.4
+To run container: docker run --tty=true --interactive=true --detach=true --volume=[path to data location on host]:/data jonasbonno/discordbot:1.5
 
 To set it up on first start: 
 </br>docker attach [name of container]
