@@ -18,7 +18,7 @@ RUN apk update && apk add \
 
 
 # Installing more dependencies
-RUN curl -I -k -o /get-pip.py https://bootstrap.pypa.io/get-pip.py
+RUN curl -k -o /get-pip.py https://bootstrap.pypa.io/get-pip.py
 RUN python3.5 get-pip.py
 RUN pip install \
 	beautifulsoup4 \
