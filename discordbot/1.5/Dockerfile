@@ -6,6 +6,7 @@ MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
 # Installing dependencies
 RUN apk update && apk add \
+	curl \
 	git \
 	python3-dev \
 	ffmpeg \
@@ -14,17 +15,10 @@ RUN apk update && apk add \
 	libffi-dev \
 	build-base && \
 	rm -rf /var/lib/apt/lists/*
-	
-
-# Updating CA certificates on Alpine Linux
-RUN apk --update upgrade && \
-	apk add curl ca-certificates && \
-	update-ca-certificates && \
-	rm -rf /var/cache/apk/*
 
 
 # Installing more dependencies
-RUN wget https://bootstrap.pypa.io/get-pip.py
+RUN curl -I -k -o /get-pip.py https://bootstrap.pypa.io/get-pip.py
 RUN python3.5 get-pip.py
 RUN pip install \
 	beautifulsoup4 \
