@@ -9,4 +9,4 @@ WORKDIR /data
 
 
 # Define default command.
-CMD ["/env/bin/python", "/data/python/main.py"]
+CMD ["/usr/bin/python", "/data/python/main.py"]
