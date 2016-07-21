@@ -1,4 +1,4 @@
-#rpi-grovepi
+#rpi-grovepi - v1.0
 Raspberry Pi with a GrovePi Docker container
 
 Do the following on your Raspberry Pi Docker host before running the container:
