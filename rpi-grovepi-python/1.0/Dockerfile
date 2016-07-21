@@ -1,4 +1,4 @@
-FROM hypriot/rpi-python
+FROM jonasbonno/rpi-grovepi
 
 
 MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
