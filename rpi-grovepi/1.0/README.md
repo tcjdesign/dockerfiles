@@ -11,11 +11,12 @@ Raspberry Pi with a GrovePi Docker container
 - dtparam=i2c_arm=on
 
 4 - Enable I2C with raspi-config (Advanced -> I2C -> Enable)
+- sudo raspi-config
 
 5 - Reboot the Raspberry Pi
+- sudo shutdown -r now
 
 6 - Check if the Raspberry Pi is now connected to the GrovePi with the following command
-
 - sudo i2cdetect -y 1
   
 If you can see a “04” in the output, this means the Raspberry Pi is able to detect the GrovePi!
