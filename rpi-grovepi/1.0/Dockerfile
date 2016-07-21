@@ -19,7 +19,8 @@ RUN apt-get update && apt-get install -y \
 # Installing more dependencies
 RUN pip install RPi.GPIO
 RUN git clone git://github.com/DexterInd/GrovePi.git
-RUN python /data/GrovePi/Software/Python/setup.py install
+RUN cp /data/GrovePi/Script/grove.pth /usr/lib/python2.7/dist-packages/grove.pth
+RUN cd /data/GrovePi/Software/Python/ && python setup.py install
 
 
 # Run
