@@ -1,6 +1,7 @@
 #rpi-grovepi
 Raspberry Pi with a GrovePi Docker container
 
+
 1 - Download and flash the Raspberry Pi with HypriotOS from https://hypriot.com/
 
 2 - Install i2c-tools and raspi-config with apt
