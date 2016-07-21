@@ -1,6 +1,7 @@
 #rpi-grovepi
 Raspberry Pi with a GrovePi Docker container
 
+Do the following on your Raspberry Pi Docker host before running the container:
 1 - Download and flash the Raspberry Pi with HypriotOS from https://hypriot.com/
 
 2 - Install i2c-tools and raspi-config with apt
@@ -20,5 +21,13 @@ Raspberry Pi with a GrovePi Docker container
 - sudo i2cdetect -y 1
   
 If you can see a “04” in the output, this means the Raspberry Pi is able to detect the GrovePi!
+
+To run container: docker run --tty=true --interactive=true --detach=true jonasbonno/rpi-grovepi
+
+To access the console: 
+- docker attach [name of container] bash
+
+Run your commands
+To exit again press CTRL+P and then CTRL+Q
 
 Source: https://github.com/JonasBonno/dockerfiles
