@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y \
   python-smbus \
   i2c-tools \
   git && \
-	apt-get clean && \ 
-	rm -rf /var/lib/apt/lists/* 
+  apt-get clean && \ 
+  rm -rf /var/lib/apt/lists/*
 
 
 # Installing more dependencies
