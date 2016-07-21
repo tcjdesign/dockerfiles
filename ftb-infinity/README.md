@@ -14,8 +14,8 @@ Running ftb-infinity:
 docker run -d -p 25565:25565 -v [path to data location on host]:/opt/minecraft jonasbonno/ftb-infinity
 
 To access the console:
-</br>docker attach [name of container]
-</br>Run for commands
+</br>docker attach [name of container] bash
+</br>Run your commands
 </br>To exit again press CTRL+P and then CTRL+Q
 
 I personaly use:
