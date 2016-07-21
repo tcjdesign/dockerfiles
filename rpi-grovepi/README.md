@@ -2,6 +2,7 @@
 Raspberry Pi with a GrovePi Docker container
 
 Do the following on your Raspberry Pi Docker host before running the container:
+
 1 - Download and flash the Raspberry Pi with HypriotOS from https://hypriot.com/
 
 2 - Install i2c-tools and raspi-config with apt
