@@ -22,7 +22,7 @@ Do the following on your Raspberry Pi Docker host before running the container:
   
 If you can see a “04” in the output, this means the Raspberry Pi is able to detect the GrovePi!
 
-To run container: docker run --tty=true --interactive=true --detach=true jonasbonno/rpi-grovepi
+To run container: docker run --tty=true --interactive=true --detach=true --privileged --volume=/dev/i2c-1:/dev/i2c-1 jonasbonno/rpi-grovepi
 
 To access the console: 
 - docker attach [name of container] bash
