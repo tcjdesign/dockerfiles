@@ -8,7 +8,7 @@ To run container: docker run --tty=true --interactive=true --detach=true --privi
 NOTE: Your python script must be executed with the filename "main.py" in the root of "/data/python"
 
 To access the console: 
-- docker attach [name of container] bash
+- docker attach [name of container]
 
 Run your commands
 To exit again press CTRL+P and then CTRL+Q
