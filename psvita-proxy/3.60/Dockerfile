@@ -14,7 +14,9 @@ RUN dpkg --add-architecture i386 && \
 
 
 # Downloading Vita Update Blocker v1.2 (for Vita firmware 3.60)
-RUN mkdir /vita && cd /vita && megadl https://mega.nz/#\!ydoDkSIS\!8rvQ0osIIy1Od8z8dbGAo0naDm_ToUSzOoztkXiyXxQ
+RUN mkdir /vita
+RUN /usr/bin/megadl https://mega.nz/#\!ydoDkSIS\!8rvQ0osIIy1Od8z8dbGAo0naDm_ToUSzOoztkXiyXxQ
+RUN mv vita_update_blocker_v1.2.exe /vita
 
 
 # Define default command.
