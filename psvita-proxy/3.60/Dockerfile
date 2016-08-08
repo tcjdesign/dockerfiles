@@ -5,18 +5,15 @@ MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
 
 # Installing dependencies
-RUN dpkg --add-architecture i386 && \
- 	apt-get update && apt-get install -y \
- 	wine && \
+RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y \
+ 	wine \
 	megatools && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
 
 
 # Downloading Vita Update Blocker v1.2 (for Vita firmware 3.60)
-RUN mkdir /vita
-RUN /usr/bin/megadl https://mega.nz/#\!ydoDkSIS\!8rvQ0osIIy1Od8z8dbGAo0naDm_ToUSzOoztkXiyXxQ
-RUN mv vita_update_blocker_v1.2.exe /vita
+RUN mkdir /vita && cd /vita && /usr/bin/megadl https://mega.nz/\#\!ydoDkSIS\!8rvQ0osIIy1Od8z8dbGAo0naDm_ToUSzOoztkXiyXxQ
 
 
 # Define default command.
