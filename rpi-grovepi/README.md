@@ -26,7 +26,7 @@ If you can see a “04” in the output, this means the Raspberry Pi is able to 
 To run container: docker run --tty=true --interactive=true --detach=true --privileged --volume=/dev/i2c-1:/dev/i2c-1 jonasbonno/rpi-grovepi
 
 To access the console: 
-- docker attach [name of container] bash
+- docker attach [name of container]
 
 Run your commands
 To exit again press CTRL+P and then CTRL+Q
