@@ -7,7 +7,7 @@ MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 # Installing dependencies
 RUN dpkg --add-architecture i386 && \
  	apt-get update && apt-get install -y \
- 	wine:i386 && \
+ 	wine && \
 	megatools && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
