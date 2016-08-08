@@ -1,7 +1,12 @@
-FROM tianon/wine:32
+FROM debian:sid
 
 
 MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
+
+
+RUN dpkg --add-architecture i386 \
+	&& apt-get update \
+	&& apt-get install -y wine:i386
 
 
 RUN apt-get update && apt-get install -y \
