@@ -33,7 +33,11 @@ RUN git clone -b develop --single-branch https://github.com/Twentysix26/Red-Disc
 VOLUME ["/root/Red-DiscordBot"]
 
 
+# Setting workdir
+WORKDIR /root/Red-DiscordBot
+
+
 # Adding startscript and executes it
 ADD start.sh /start.sh
 RUN chmod 0755 /start.sh
-CMD ["bash", "start.sh"]
+CMD ["bash", "/start.sh"]
