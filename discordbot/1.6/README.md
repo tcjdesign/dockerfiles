@@ -19,7 +19,8 @@ docker start[name of data container]
 
 To set it up on first start: 
 </br>docker attach [name of container]
-</br>Enter discord email, password, admin group and etc.
+</br>Create bot account: https://twentysix26.github.io/Red-Docs/red_guide_bot_accounts
+</br>Enter discord token, admin group and etc.
 </br>To exit again press CTRL+P and then CTRL+Q
 
 Red has been completely rewritten. It is now fully modular and it comes with sets of features/commands that can be enabled/disabled to your liking, making it customizable exactly how you want.
