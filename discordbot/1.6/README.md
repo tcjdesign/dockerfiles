@@ -5,15 +5,22 @@ made by Twentysix at https://github.com/Twentysix26/Red-DiscordBot/tree/develop
 
 #### *Music, admin, trivia, fun commands and much more!*  
 
-To run container: docker run --tty=true --interactive=true --detach=true --volume=[path to data location on host]:/data jonasbonno/discordbot:1.6
+To run container:
+docker create --name [name of data container] jonasbonno/discordbot
+docker run --tty=true --interactive=true --detach=true --volumes-from [name of data container] jonasbonno/discordbot:1.6
+
+Backup:
+docker run --rm --volumes-from [name of data container] -v $(pwd):/backup alpine tar jcpvf /backup/discordbot.bz2 /root/Red-DiscordBot
+
+Restore:
+docker stop [name of data container]
+docker run --rm --volumes-from [name of data container] -v $(pwd):/backup alpine tar jxpvf /backup/discordbot.bz2
+docker start[name of data container]
 
 To set it up on first start: 
 </br>docker attach [name of container]
 </br>Enter discord email, password, admin group and etc.
 </br>To exit again press CTRL+P and then CTRL+Q
-
-Firewall:
-Remember that the bot needs access to Discord voice servers therefor open up for e.g. london365.discord.gg and frankfurt306.discord.gg. If you use other server locations then check your firewall logs and open for their blocked IPs.
 
 Red has been completely rewritten. It is now fully modular and it comes with sets of features/commands that can be enabled/disabled to your liking, making it customizable exactly how you want.
 You can turn Red into a trivia bot, an admin bot, a music bot (...) or all of these together.
