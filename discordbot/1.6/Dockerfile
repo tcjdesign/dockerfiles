@@ -29,6 +29,10 @@ RUN pip3 install \
 RUN git clone -b develop --single-branch https://github.com/Twentysix26/Red-DiscordBot.git /root/Red-DiscordBot
 
 
+# Exposes volumes
+VOLUME ["/root/Red-DiscordBot"]
+
+
 # Adding startscript and executes it
 ADD start.sh /start.sh
 RUN chmod 0755 /start.sh
