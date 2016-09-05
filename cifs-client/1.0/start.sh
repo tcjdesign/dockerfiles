@@ -28,6 +28,6 @@ fi
 
 # Error: Restaring
 echo "Error: Not able to mount share!"
-echo "Restarting container in 1 minute!"
-sleep 60
+echo "Restarting container in 10 sec!"
+sleep 10
 exit
