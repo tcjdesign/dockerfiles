@@ -1,18 +1,17 @@
 FROM java:8-jre
 
-
 MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
-
 
 RUN apt-get update && \
 	apt-get upgrade --yes --force-yes && \
 	apt-get clean && \ 
 	rm -rf /var/lib/apt/lists/* 
 
+# Exposes volumes
+VOLUME ["/opt/minecraft/world"]
 
 # Expose port 25565
 EXPOSE 25565
-
 
 # Adding startscript and executes it
 ADD start.sh /start.sh
