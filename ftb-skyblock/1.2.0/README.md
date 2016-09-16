@@ -1,4 +1,4 @@
-# ftb-skyblock
+# ftb-skyblock - v1.2.0
 Feed The Beast Infinity Evolved Skyblock modpack
 made by Feed The Beast at https://feed-the-beast.com
 
@@ -10,7 +10,7 @@ FTB Infinity Evolved Skyblock is a modpack designed to provide an extra challeng
 NOTE: In compliance with Mojang "End User License Agreement", you will need to agree to the EULA in order to run your own Minecraft server. By using this container you acknowledge the EULA! If you do not agree, then you are not permitted to use this container!
 
 Running ftb-infinityskyblock:
-docker run -d -p 25565:25565 -v [path to data location on host]:/opt/minecraft jonasbonno/ftb-skyblock
+docker run -d -p 25565:25565 -v [path to data location on host]:/opt/minecraft jonasbonno/ftb-skyblock:1.2.0
 
 To access the console:
 </br>docker attach [name of container]
@@ -18,7 +18,7 @@ To access the console:
 </br>To exit again press CTRL+P and then CTRL+Q
 
 I personaly use:
-docker run --tty=true --interactive=true --detach=true --name=CONTAINERNAME --publish=25565:25565 --volume=[path to data location on host]:/opt/minecraft jonasbonno/ftb-skyblock
+docker run --tty=true --interactive=true --detach=true --name=CONTAINERNAME --publish=25565:25565 --volume=[path to data location on host]:/opt/minecraft jonasbonno/ftb-skyblock:1.2.0
 
 The first time the server starts it creates the server.properties file with default settings and spawns "world". 
 Feel free to modify to your preferences. 
