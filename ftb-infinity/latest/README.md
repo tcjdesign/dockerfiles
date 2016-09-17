@@ -19,10 +19,10 @@ Settings will reset when upgrading.
 Access the console to op and whitelist.
 
 Running ftb-infinity data container:
-docker run --name [name of your data container] jonasbonno/ftb-infinity:2.6.0 echo 'Data-only container'
+docker run --name [name of your data container] jonasbonno/ftb-infinity echo 'Data-only container'
 
 Running ftb-infinity server:
-docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:25565 jonasbonno/ftb-infinity:2.6.0
+docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:25565 jonasbonno/ftb-infinity
 
 To access the console:
 </br>docker attach [name of container] bash
