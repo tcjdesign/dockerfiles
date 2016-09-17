@@ -30,7 +30,7 @@ To access the console:
 </br>To exit: Hold CTRL + press P & press Q
 
 The first time the server starts it creates the server.properties file with default settings and spawns "world". 
-Not recommended to change thies setting be hand.
+Not recommended to change these settings be hand.
 
 When upgrading:
 To upgrade delete ftb-infinity server and start new ftb-infinity server with --volumes-from [name of your data container].
