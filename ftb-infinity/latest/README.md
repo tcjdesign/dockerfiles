@@ -9,7 +9,7 @@ Fastcraft is enabled in this pack by default.
 <img src="http://media-elerium.cursecdn.com/avatars/27/883/635818079923323584.png" width="338" height="338">
 
 NOTE: In compliance with Mojang "End User License Agreement", you will need to agree to the EULA in order to run your own Minecraft server. By using this container you acknowledge the EULA! If you do not agree, then you are not permitted to use this container!
-</br>https://account.mojang.com/documents/minecraft_eula
+https://account.mojang.com/documents/minecraft_eula
 
 This Dockerfile will always download latest build of Feed The Beast Infinity Evolved when building.
 The releases on hub.docker.com are build when a new stable release is available fro Feed The Beast.
