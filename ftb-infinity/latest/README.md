@@ -24,6 +24,22 @@ docker run --name [name of your data container] jonasbonno/ftb-infinity echo 'Da
 Running ftb-infinity server:
 docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:25565 jonasbonno/ftb-infinity
 
+Upgrading from v2.5.0 or older:
+1 - Shutdown Minecraft container
+2 - docker run --rm --volumes-from [name of your old data container] alpine mv /opt/minecraft/[name of your world] /minecraft/world
+3 - docker run --rm --volumes-from [name of your old data container] -v $(pwd):/backup alpine tar zcpf /backup/[name of your backup file].tgz /minecraft/world
+4 - Create a new 2.6.0 or newer Minecraft container + data container
+5 - Start new Minecraft container
+6 - Shutdown new Minecraft container when idle
+7 - docker run --rm --volumes-from [name of your new data container] alpine rm -rf /minecraft/world/*
+8 - docker run --rm --volumes-from [name of your new data container] -v $(pwd):/backup alpine tar zxpvf /backup/[name of your backup file].tgz
+9 - docker run --rm --volumes-from [name of your new data container] alpine chown -R 1000:1000 /minecraft
+10 - docker run --rm --volumes-from [name of your new data container] alpine chmod -R 755 /minecraft
+
+When upgrading sometime items have been remove and therefor you have to confirm removal.
+To do so run "docker attach [name of your container]" and type "/fml confirm" when prompted to confirm or cancel.
+Exit with Hold CTRL + press P & press Q.
+
 To access the console:
 </br>docker attach [name of container] bash
 </br>Run your commands
