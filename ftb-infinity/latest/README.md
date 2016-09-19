@@ -28,7 +28,7 @@ Upgrading from v2.5.0 or older: </br>
 1 - Shutdown Minecraft container </br>
 2 - docker run --rm --volumes-from [name of your old data container] alpine mv /opt/minecraft/[name of your world] /minecraft/world </br>
 3 - docker run --rm --volumes-from [name of your old data container] -v $(pwd):/backup alpine tar zcpf /backup/[name of your backup file].tgz /minecraft/world </br>
-4 - Create a new 2.6.0 or newer Minecraft container + data container </br>
+4 - Create a new v2.6.0 or newer Minecraft container + data container </br>
 5 - Start new Minecraft container </br>
 6 - Shutdown new Minecraft container when idle </br>
 7 - docker run --rm --volumes-from [name of your new data container] alpine rm -rf /minecraft/world/* </br>
