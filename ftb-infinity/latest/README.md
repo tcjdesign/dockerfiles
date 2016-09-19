@@ -24,7 +24,7 @@ docker run --name [name of your data container] jonasbonno/ftb-infinity echo 'Da
 Running ftb-infinity server:
 docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:25565 jonasbonno/ftb-infinity
 
-Upgrading from v2.5.0 or older:
+Upgrading from v2.5.0 or older: </br>
 1 - Shutdown Minecraft container </br>
 2 - docker run --rm --volumes-from [name of your old data container] alpine mv /opt/minecraft/[name of your world] /minecraft/world </br>
 3 - docker run --rm --volumes-from [name of your old data container] -v $(pwd):/backup alpine tar zcpf /backup/[name of your backup file].tgz /minecraft/world </br>
