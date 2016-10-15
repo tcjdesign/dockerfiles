@@ -19,8 +19,8 @@ USER root
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
 	wget -qO- http://legacy.feed-the-beast.com/server-downloads | grep -Eo 'http:\/\/www\.creeperrepo\.net\/FTB2\/modpacks%5EFTBPresentsHermitPack[^"]+FTBPresentsHermitPackServer\.zip' | xargs -n1 wget && \
-	unzip modpacks^FTBPresentsHermitPackServer* && \
-	rm modpacks^FTBPresentsHermitPackServer* && \
+	unzip modpacks^FTBPresentsHermitPack* && \
+	rm modpacks^FTBPresentsHermitPack* && \
 	chmod u+x FTBInstall.sh ServerStart.sh && \
 	echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula)." > eula.txt && \
 	echo "$(date)" >> eula.txt && \
