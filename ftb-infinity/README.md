@@ -12,7 +12,7 @@ NOTE: In compliance with Mojang "End User License Agreement", you will need to a
 https://account.mojang.com/documents/minecraft_eula
 
 This Dockerfile will always download latest build of Feed The Beast Infinity Evolved when building.
-The releases on hub.docker.com are build when a new stable release is available fro Feed The Beast.
+The releases on hub.docker.com are build when a new stable release is available from Feed The Beast.
 
 The worldname must be the default "world". 
 Settings will reset when upgrading.
