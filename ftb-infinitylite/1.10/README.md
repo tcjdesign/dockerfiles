@@ -1,4 +1,4 @@
-# ftb-infinitylite - latest
+# ftb-infinitylite
 Feed The Beast Infinity Lite 1.10 modpack
 made by Feed The Beast at https://feed-the-beast.com
 
