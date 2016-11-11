@@ -2,7 +2,7 @@
 Feed The Beast Infinity Lite 1.10 modpack
 made by Feed The Beast at https://feed-the-beast.com
 
-Modpack for current Minecraft
+Modpack for current Minecraft.
 Infinity Lite is a mix of Tech and Magic mods compiled into a medium sized modpack from the FTB team that is designed for solo play as well as small and medium population servers.
 A minimum of 4 GB of RAM is recommend for clients as well as servers for best performance.
 Fastcraft is enabled in this pack by default.
