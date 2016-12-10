@@ -18,7 +18,7 @@ USER root
 USER root
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
-	wget --no-check-certificate https://addons-origin.cursecdn.com/files/2352/785/FTBInfinityLite110-1.3.3-1.10.2.zip -O FTBInfinityLite.zip && \
+	wget --no-check-certificate https://addons-origin.cursecdn.com/files/2352/786/FTBInfinityLite110Server_1.3.3.zip -O FTBInfinityLite.zip && \
 	unzip FTBInfinityLite.zip && \
 	rm FTBInfinityLite.zip && \
 	chmod u+x FTBInstall.sh ServerStart.sh && \
