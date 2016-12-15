@@ -15,7 +15,6 @@ WORKDIR /minecraft
 USER root
 
 # Creating user and downloading files
-USER root
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
 	wget --no-check-certificate https://addons-origin.cursecdn.com/files/2345/132/FTBInfinityLite110Server_1.2.0.zip -O FTBInfinityLite.zip && \
