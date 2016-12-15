@@ -15,7 +15,6 @@ WORKDIR /minecraft
 USER root
 
 # Creating user and downloading files
-USER root
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
 	wget -qO- http://legacy.feed-the-beast.com/server-downloads | grep -Eo 'http:\/\/www\.creeperrepo\.net\/FTB2\/modpacks%5EFTBInfinityEvolvedSkyblock[^"]+FTBInfinityEvolvedSkyblockServer\.zip' | xargs -n1 wget && \
