@@ -15,7 +15,6 @@ WORKDIR /minecraft
 USER root
 
 # Creating user and downloading files
-USER root
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
 	wget --no-check-certificate https://www.feed-the-beast.com/projects/ftb-presents-hermitpack/files/2344894/download -O FTBPresentsHermitPack.zip && \
