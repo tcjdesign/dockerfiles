@@ -1,8 +1,8 @@
-# ftb-infinitylite
+# ftb-infinitylite - v1.10-1.8.0
 Feed The Beast Infinity Lite 1.10 modpack
 made by Feed The Beast at https://feed-the-beast.com
 
-Modpack for more current Minecraft versions.
+Modpack for current Minecraft.
 Infinity Lite is a mix of Tech and Magic mods compiled into a medium sized modpack from the FTB team that is designed for solo play as well as small and medium population servers.
 A minimum of 4 GB of RAM is recommend for clients as well as servers for best performance.
 Fastcraft is enabled in this pack by default.
@@ -17,10 +17,10 @@ Settings will reset when upgrading.
 Access the console to op and whitelist.
 
 Running ftb-infinitylite data container:
-docker run --name [name of your data container] jonasbonno/ftb-infinitylite echo 'Data-only container'
+docker run --name [name of your data container] jonasbonno/ftb-infinitylite:1.10-1.8.0 echo 'Data-only container'
 
 Running ftb-infinitylite server:
-docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:25565 jonasbonno/ftb-infinitylite
+docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:25565 jonasbonno/ftb-infinitylite:1.10-1.8.0
 
 To access the console:
 </br>docker attach [name of container]
