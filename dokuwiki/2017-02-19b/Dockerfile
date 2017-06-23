@@ -3,7 +3,7 @@ FROM alpine
 MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
 RUN apk --no-cache add \
-    php7 php-openssl php7-fpm php7-gd php7-session php7-xml nginx supervisor curl tar
+    php7 php7-openssl php7-fpm php7-gd php7-session php7-xml nginx supervisor curl tar
 
 RUN mkdir -p /run/nginx && \
     mkdir -p /var/www && \
