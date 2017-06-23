@@ -25,6 +25,6 @@ RUN echo "cgi.fix_pathinfo = 0;" >> /etc/php7/php-fpm.ini && \
     chmod +x /start.sh
 
 EXPOSE 80
-VOLUME ["/var/www"]
+VOLUME ["/var/www/data/","/var/www/lib/plugins/","/var/www/conf/","/var/www/lib/tpl/"]
 
 CMD /start.sh
