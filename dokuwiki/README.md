@@ -18,6 +18,9 @@ docker run --name [name of your data container] jonasbonno/dokuwiki echo 'true'
 Running dokuwiki server:
 docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:80 jonasbonno/dokuwiki
 
+Important! After creation complete install by goin to http(s)://[your hostname or IP]:[port]/install.php
+Please note that the container needs to be restarted after first run, due to permissions changed in the /var/tmp/nginx/fastcgi folder.
+
 Upgrading is done by removing the dokuwiki server container and keeping the old dokuwiki data container.
 Create a new dokuwiki server with latest version and attach volumes from the data container.
 After upgrading or restoring the container the Access Control List Management may not be able to show subpages.
