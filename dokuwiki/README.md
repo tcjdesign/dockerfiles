@@ -1,4 +1,3 @@
-# DokuWiki
 DokuWiki is a simple to use and highly versatile Open Source wiki software that doesn't require a database. 
 It is loved by users for its clean and readable syntax. 
 The ease of maintenance, backup and integration makes it an administrator's favorite. 
@@ -20,6 +19,8 @@ docker run --tty=true --interactive=true --detach=true --name=[name of your cont
 
 Upgrading is done by removing the dokuwiki server container and keeping the old dokuwiki data container.
 Create a new dokuwiki server with latest version and attach volumes from the data container.
+After upgrading or restoring the container the Access Control List Management may not be able to show subpages.
+Change Interface language to another language and back again to fix this weird issue.
 
 To access the console:
 </br>docker attach [name of container] bash
