@@ -1,4 +1,4 @@
-d# Dokuwiki - v2017-02-19b
+# Dokuwiki - v2017-02-19b
 DokuWiki is a simple to use and highly versatile Open Source wiki software that doesn't require a database. 
 It is loved by users for its clean and readable syntax. 
 The ease of maintenance, backup and integration makes it an administrator's favorite. 
@@ -18,7 +18,7 @@ docker run --name [name of your data container] jonasbonno/dokuwiki echo 'true'
 Running dokuwiki server:
 docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:80 jonasbonno/dokuwiki
 
-Important! After creation complete install by goin to http(s)://[your hostname or IP]:[port]/install.php
+Important! After creation complete the install by going to http(s)://[your hostname or IP]:[port]/install.php
 Please note that the container needs to be restarted after first run, due to permissions changed in the /var/tmp/nginx/fastcgi folder.
 
 Upgrading is done by removing the dokuwiki server container and keeping the old dokuwiki data container.
