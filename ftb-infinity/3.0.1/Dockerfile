@@ -17,7 +17,7 @@ USER root
 # Creating user and downloading files
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
-	wget http://addons-origin.cursecdn.com/files/2459/701/FTBInfinityServer_3.0.1.zip \
+	wget http://addons-origin.cursecdn.com/files/2459/701/FTBInfinityServer_3.0.1.zip && \
 	unzip FTBInfinityServer_3.0.1.zip && \
 	rm FTBInfinityServer_3.0.1.zip && \
 	chmod u+x FTBInstall.sh ServerStart.sh && \
