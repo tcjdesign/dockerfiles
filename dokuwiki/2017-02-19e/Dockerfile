@@ -8,7 +8,7 @@ RUN apk --no-cache add \
 RUN mkdir -p /run/nginx && \
     mkdir -p /var/www && \
     cd /var/www && \
-    curl -O -L "https://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz" && \
+    curl -O -L "https://download.dokuwiki.org/src/dokuwiki/dokuwiki-2017-02-19e.tgz" && \
     tar -xzf dokuwiki-*.tgz --strip 1 && \
     rm dokuwiki-*.tgz
 
