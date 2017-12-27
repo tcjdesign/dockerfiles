@@ -8,12 +8,6 @@ RUN apt-get update && \
 	apt-get clean && \ 
 	rm -rf /var/lib/apt/lists/* 
 
-# Setting workdir
-WORKDIR /minecraft
-
-# Changing user to root
-USER root
-
 # Creating user and downloading files
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
@@ -25,6 +19,9 @@ RUN useradd -m -U minecraft && \
 	echo "$(date)" >> eula.txt && \
 	echo "eula=TRUE" >> eula.txt && \
 	chown -R minecraft:minecraft /minecraft
+	chmod g+s /minecraft
+	
+# Changing user to minecraft	
 USER minecraft
 
 # Running install
@@ -32,6 +29,9 @@ RUN /minecraft/FTBInstall.sh
 
 # Expose port 25565
 EXPOSE 25565
+
+# Setting workdir
+WORKDIR /minecraft
 
 # Expose volume
 VOLUME ["/minecraft/world"]
