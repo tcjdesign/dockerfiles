@@ -7,6 +7,9 @@ RUN apt-get update && \
 	apt-get upgrade --yes --force-yes && \
 	apt-get clean && \ 
 	rm -rf /var/lib/apt/lists/* 
+	
+# Setting workdir
+WORKDIR /minecraft
 
 # Creating user and downloading files
 RUN useradd -m -U minecraft && \
@@ -29,9 +32,6 @@ RUN /minecraft/FTBInstall.sh
 
 # Expose port 25565
 EXPOSE 25565
-
-# Setting workdir
-WORKDIR /minecraft
 
 # Expose volume
 VOLUME ["/minecraft/world"]
