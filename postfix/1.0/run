@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Delete old pid files
+rm -f \
+  /run/rsyslogd.pid \
+  /var/spool/postfix/pid/master.pid
+
+# Update postfix and files
+touch /etc/postfix/blank
+mkdir -p /var/spool/postfix
+
+if [ ! -f /etc/postfix/mynetworks ]; then
+  touch /etc/postfix/mynetworks
+fi
+
+if [ ! -f /etc/postfix/relaydomains ]; then
+  touch /etc/postfix/relaydomains && postmap /etc/postfix/relaydomains
+else
+  postmap /etc/postfix/relaydomains
+fi
+
+if [ ! -f /etc/postfix/senderaccess ]; then
+  touch /etc/postfix/senderaccess && postmap /etc/postfix/senderaccess
+else
+  postmap /etc/postfix/senderaccess
+fi
+
+if [ ! -f /etc/postfix/senderdeprelay ]; then
+  touch /etc/postfix/senderdeprelay && postmap /etc/postfix/senderdeprelay
+else
+  postmap /etc/postfix/senderdeprelay
+fi
+
+if [ ! -f /etc/postfix/transport ]; then
+  touch /etc/postfix/transport && postmap /etc/postfix/transport
+else
+  postmap /etc/postfix/transport
+fi
+
+# POSTFIX_var env -> postconf -e var=$POSTFIX_var
+for e in ${!POSTFIX_*} ; do postconf -e "${e:8}=${!e}" ; done
+chown -R postfix:postfix /var/lib/postfix /var/mail /var/spool/postfix
+
+# Start
+service postfix start
+rsyslogd -n &
+wait
+exit 0
