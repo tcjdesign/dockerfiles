@@ -4,7 +4,7 @@ docker run \
 --tty=true \
 --detach=true \
 --restart=always \
---name=postfix-out-post \
+--name=postfix \
 --publish=25:25 \
 --volume=/DIR/ON/HOST/master.cf:/etc/postfix/master.cf \
 --volume=/DIR/ON/HOST/main.cf:/etc/postfix/main.cf \
