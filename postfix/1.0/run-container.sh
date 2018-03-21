@@ -6,6 +6,8 @@ docker run \
 --restart=always \
 --name=postfix-out-post \
 --publish=25:25 \
+--volume=/DIR/ON/HOST/master.cf:/etc/postfix/master.cf
+--volume=/DIR/ON/HOST/main.cf:/etc/postfix/main.cf
 --volume=/DIR/ON/HOST/mynetworks:/etc/postfix/mynetworks \
 --volume=/DIR/ON/HOST/relaydomains:/etc/postfix/relaydomains \
 --volume=/DIR/ON/HOST/senderaccess:/etc/postfix/senderaccess \
