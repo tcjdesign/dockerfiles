@@ -13,10 +13,10 @@ The releases on hub.docker.com are build when a new stable release is available 
 Please note that the container needs to be restarted after first run, due to permissions changed in the /var/tmp/nginx/fastcgi folder!
 
 Running dokuwiki data container:
-docker run --name [name of your data container] jonasbonno/dokuwiki echo 'true'
+docker run --name [name of your data container] jonasbonno/dokuwiki:2017-02-19e echo 'true'
 
 Running dokuwiki server:
-docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:80 jonasbonno/dokuwiki
+docker run --tty=true --interactive=true --detach=true --name=[name of your container] --volumes-from [name of your data container] --publish=[port on your host]:80 jonasbonno/dokuwiki:2017-02-19e
 
 Important! After creation complete the install by going to http(s)://[your hostname or IP]:[port]/install.php
 Please note that the container needs to be restarted after first run, due to permissions changed in the /var/tmp/nginx/fastcgi folder.
